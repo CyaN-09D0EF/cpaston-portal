@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>팀 구성 및 역할</title>
+</head>
+<body>
+  <h1>팀 구성 및 역할</h1>
+  <ul>
+    {% for member in data.members %}
+      <li>{{ member.name }} - {{ member.role }} (담당: {{ member.task }})</li>
+    {% endfor %}
+  </ul>
+
+  <h3>협업 방식</h3>
+  <p>{{ data.collaboration }}</p>
+
+  <hr>
+  <p><a href="/main"> 홈으로 돌아가기</a></p>
+</body>
+</html>

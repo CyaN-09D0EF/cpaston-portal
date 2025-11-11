@@ -1,0 +1,36 @@
+{
+  "project_title": "슛돌이",
+  "subject": {
+    "title": "스포츠 매칭 웹 서비스",
+    "goal": "스포츠를 함께할 사람을 찾기 어려운 문제를 해결하기 위한 플랫폼 제공",
+    "summary": " 스포츠 참여 접근성 향상 누구나 쉽게 경기 참여 가능"
+
+  },
+  "rationale": {
+    "problem": "현재 있는 스포츠 매칭 서비스의 단점",
+    "necessity": "단점: 리뷰 쓰는 것의 불편함, 풋살을 중심으로 진행",
+    "value": "스포츠 파트너 매칭 용이성 증대"
+  },
+  "features": {
+    "core_functions": [
+      "스포츠 매칭 기능",
+      "커뮤니티 게시판 운영",
+      "경기 후 리뷰 시스템"
+      
+    ]
+  },
+  "environment": {
+    "language": "Python, HTML, CSS, JavaScript",
+    "framework": "Flask",
+    "deployment": "Docker, EC2",
+    "version_control": "Git & GitHub"
+  },
+  "team": {
+    "members": [
+      {"name": "양윤석", "role": "백엔드 개발", "task": "API 및 데이터 관리"},
+      {"name": "최세현", "role": "프론트엔드", "task": "UI 설계 및 페이지 구현"},
+      {"name": "남지수", "role": "프로젝트 매니저", "task": "문서화 및 배포"}
+    ],
+    "collaboration": "GitHub를 통한 브랜치 단위 병합 및 코드 리뷰 방식"
+  }
+}

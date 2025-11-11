@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>{{ data.project.title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="container">
+  <h1>{{ data.project.title }}</h1>
+  <nav>
+    <a href="{{ url_for('web.main_page') }}">메인</a> |
+    <a href="{{ url_for('web.subject_page') }}">주제</a> |
+    <a href="{{ url_for('web.rationale_page') }}">근거</a> |
+    <a href="{{ url_for('web.features_page') }}">기능</a> |
+    <a href="{{ url_for('web.environment_page') }}">환경</a> |
+    <a href="{{ url_for('web.team_page') }}">팀</a>
+  </nav>
+</header>
+<main class="container">
+  {% block content %}{% endblock %}
+</main>
+<footer class="container">
+  <small>© {{ data.project.team | join(', ') }}</small>
+</footer>
+</body>
+</html>

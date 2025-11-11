@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ data.project_title }}</title>
+</head>
+<body>
+  <h1>{{ data.project_title }}</h1>
+  <h3>프로젝트 주제: {{ data.subject.title }}</h3>
+
+  <h4>팀 구성</h4>
+  <ul>
+    {% for member in data.team.members %}
+      <li>{{ member.name }} - {{ member.role }}</li>
+    {% endfor %}
+  </ul>
+
+  <hr>
+  <h3>페이지 이동</h3>
+  <ul>
+    <li><a href="/subject">프로젝트 주제</a></li>
+    <li><a href="/rationale">실용적 근거</a></li>
+    <li><a href="/features">핵심 기능</a></li>
+    <li><a href="/environment">구현 환경</a></li>
+    <li><a href="/team">팀 구성</a></li>
+  </ul>
+</body>
+</html>

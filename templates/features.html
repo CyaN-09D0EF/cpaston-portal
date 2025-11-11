@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>핵심 기능</title>
+</head>
+<body>
+  <h1>핵심 기능</h1>
+  <ul>
+    {% for feature in data.core_functions %}
+      <li>{{ feature }}</li>
+    {% endfor %}
+  </ul>
+
+  <hr>
+  <p><a href="/main"> 홈으로 돌아가기</a></p>
+</body>
+</html>
